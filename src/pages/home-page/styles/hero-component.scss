@@ -50,10 +50,10 @@
         height: 100%;
     }
 
-    & &__image {
+    & &__background-image {
         width: 100%;
         height: 100%;
-        object-position: top;
+        object-position: 50% 64%;
         object-fit: cover;
     }
 }
