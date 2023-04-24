@@ -1,0 +1,60 @@
+.top-navigation-component {
+    position: sticky;
+    top: 0;
+    height: 84px;
+    background-color: var(--black50);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+    z-index: 2;
+
+    & &__navigation-buttons-wrapper {
+        display: flex;
+        gap: 24px;
+    }
+
+    & &__navigation-button {
+        height: 46px;
+        width: 46px;
+        background-color: var(--black50);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: not-allowed;
+    }
+
+    & &__button-arrow {
+        height: 18px;
+        width: 18px;
+    }
+
+    & &__user-wrapper {
+        margin-top: 4px;
+        background-color: var(--black70);
+        border-radius: 50px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        padding: 3px 32px 3px 3px;
+        gap: 12px;
+    }
+
+    & &__user-avatar-wrapper {
+        height: 38px;
+        height: 38px;
+    }
+
+    & &__user-avatar {
+        height: 100%;
+    }
+
+    & &__user-name {
+        color: var(--white);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+    }
+}

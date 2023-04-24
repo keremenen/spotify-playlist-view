@@ -1,0 +1,16 @@
+.hero-component {
+    position: relative;
+    top: 0;
+    height: 434px;
+    margin-top: -84px;
+    z-index: 1;
+
+    & &__text-wrapper {
+        position: absolute;
+        top: 0;
+    }
+
+    & &__image {
+        width: 100%;
+    }
+}
