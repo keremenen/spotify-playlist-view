@@ -3,6 +3,12 @@
 /// For examples see Material Design color system: https://m2.material.io/design/color/the-color-system.html
 
 :root {
-    --color-primary: #5721f2;
-    --color-on-surface: #000;
+    --black: #000000;
+    --black70: rgba(0, 0, 0, 0.7);
+    --black50: rgba(0, 0, 0, 0.5);
+    --black20: rgba(0, 0, 0, 0.2);
+    --static-color: #121212;
+    --hover-color: #292929;
+    --spotify-green: #65D36E;
+    --white: #fff
 }
