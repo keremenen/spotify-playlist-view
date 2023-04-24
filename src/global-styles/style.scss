@@ -11,6 +11,11 @@
   box-sizing: border-box;
 }
 
+button {
+  border: none;
+  background: none;
+}
+
 body {
   font-family: 'Lato', sans-serif;
   color: var(--color-primary);

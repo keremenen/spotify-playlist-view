@@ -1,0 +1,37 @@
+.main-navigation-component {
+    height: 59px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    & &__play-button {
+        height: 59px;
+        width: 59px;
+        border-radius: 50%;
+        background-color: var(--spotify-green);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    & &__play-button-icon {
+        height: 22px;
+        width: 22px;
+        margin-left: 2px;
+    }
+
+    & &__favourite-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin-bottom: 1px;
+
+    }
+
+    & &__favourite-button-icon {
+        height: 32px;
+        width: 32px;
+    }
+}

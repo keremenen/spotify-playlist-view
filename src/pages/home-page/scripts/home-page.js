@@ -4,3 +4,5 @@
 import '../styles/home-page.scss'
 import '../styles/top-navigation-component.scss'
 import '../styles/hero-component.scss'
+import '../styles/main-container-component.scss'
+import '../styles/main-navigation-component.scss'
