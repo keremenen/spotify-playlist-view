@@ -1,0 +1,119 @@
+.tracklist-component {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    & &__single-track {
+        height: 89px;
+        padding: 0 50px 0 51px;
+        border-radius: 17px;
+        background-color: var(--track-color);
+        display: flex;
+        align-items: center;
+    }
+
+    & &__single-track-order {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: var(--text-color)
+    }
+
+    & &__single-track-details {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        margin-left: 32px;
+        flex-basis: 461px;
+    }
+
+    & &__single-track-album-cover-wrapper {
+        height: 56px;
+        height: 56px;
+        border-radius: 8px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    & &__single-track-album-image {
+        height: 100%;
+        width: 100%;
+    }
+
+    & &__single-track-name-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    & &__single-track-label {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        color: var(--text-color);
+    }
+
+    & &__single-track-main-info {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: var(--white);
+        cursor: pointer;
+        width: fit-content;
+    }
+
+    & &__single-track-artist-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        flex-basis: 414px;
+    }
+
+
+
+    & &__single-track-duration-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        flex-basis: 232px;
+    }
+
+    & &__single-track-duration {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+    }
+
+    & &__single-track-options {
+        display: flex;
+        gap: 18px;
+        align-items: center;
+        margin-left: auto;
+    }
+
+    & &__single-track-favourite-button {
+        height: 24px;
+        width: 24px;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    & &__single-track-favourite-icon {
+        height: 100%;
+        width: 100%;
+    }
+
+    & &__single-track-more-options-button {
+        height: 36px;
+        width: 36px;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    & &__single-track-more-options-icon {
+        height: 100%;
+        width: 100%;
+    }
+}

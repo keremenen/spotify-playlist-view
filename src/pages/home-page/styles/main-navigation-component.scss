@@ -3,6 +3,7 @@
     display: flex;
     align-items: center;
     gap: 32px;
+    margin: 32px 0 16px 0;
 
     & &__play-button {
         height: 59px;
@@ -27,7 +28,7 @@
         align-items: center;
         padding: 0;
         margin-bottom: 1px;
-
+        cursor: pointer;
     }
 
     & &__favourite-button-icon {
@@ -41,6 +42,7 @@
         align-items: center;
         padding: 0;
         margin-top: -1px;
+        cursor: pointer;
     }
 
     & &__more-options-icon {
