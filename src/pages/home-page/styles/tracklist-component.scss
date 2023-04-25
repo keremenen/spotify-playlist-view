@@ -2,7 +2,8 @@
     margin-top: 32px;
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 16px;
+    padding-bottom: 50px;
 
     & &__single-track {
         height: 89px;
@@ -11,13 +12,22 @@
         background-color: var(--track-color);
         display: flex;
         align-items: center;
+        transition: background-color 0.15s ease-in-out;
+    }
+
+    & &__single-track--active {
+        background-color: var(--active-color);
+    }
+
+    & &__single-track:hover:not(&__single-track--active) {
+        background-color: var(--hover-color);
     }
 
     & &__single-track-order {
         font-weight: 400;
         font-size: 18px;
         line-height: 22px;
-        color: var(--text-color)
+        color: var(--text-color);
     }
 
     & &__single-track-details {
@@ -39,6 +49,7 @@
     & &__single-track-album-image {
         height: 100%;
         width: 100%;
+        cursor: pointer;
     }
 
     & &__single-track-name-wrapper {
@@ -52,6 +63,8 @@
         font-size: 12px;
         line-height: 14px;
         color: var(--text-color);
+        cursor: pointer;
+        width: fit-content;
     }
 
     & &__single-track-main-info {
@@ -83,7 +96,7 @@
         font-weight: 500;
         font-size: 16px;
         line-height: 19px;
-        color: #FFFFFF;
+        color: var(--white);
     }
 
     & &__single-track-options {
