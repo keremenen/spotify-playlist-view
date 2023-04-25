@@ -1,3 +1,5 @@
+@import '../../../global-styles/styles/breakpoints.scss';
+
 .hero-component {
     position: relative;
     top: 0;
@@ -55,5 +57,39 @@
         height: 100%;
         object-position: 50% 64%;
         object-fit: cover;
+    }
+
+    @media screen and (max-width: $tablet-breakpoint) {
+        height: 425px;
+
+        & &__text-wrapper {
+            max-width: 319px;
+            bottom: 32px;
+            left: 32px;
+            gap: 16px;
+        }
+
+        & &__playlist-info {
+            font-size: 16px;
+
+            line-height: 19px;
+        }
+
+        & &__playlist-name {
+            font-size: 48px;
+            max-width: 290px;
+            padding: 0;
+            letter-spacing: -1.74px;
+        }
+
+        & &__playlist-description {
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: -0.51px;
+        }
+
+        & &__background-image {
+            object-position: 50% 40%;
+        }
     }
 }
