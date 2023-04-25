@@ -12,20 +12,53 @@
 
 <body>
   <div id="home-page">
-    <div>
-      <img src="/assets/images/javascript.svg" class="logo vanilla" alt="JavaScript logo" />
-      <h1>INVO Academy JS Starter with Vite</h1>
-      <p>
-        See the README.md for more information on how to start your challenge.
-      </p>
-      <div class="card">
-        <button id="counter" type="button"></button>
+    <div class="top-navigation-component">
+      <div class="top-navigation-component__navigation-buttons-wrapper">
+        <button class="top-navigation-component__navigation-button top-navigation-component__navigation-button--left">
+          <img src="/assets/left-arrow.png" class="top-navigation-component__button-arrow" alt="left-arrow">
+        </button>
+        <button class="top-navigation-component__navigation-button top-navigation-component__navigation-button--right">
+          <img src="/assets/right-arrow.png" class="top-navigation-component__button-arrow" alt="right-arrow">
+        </button>
       </div>
+      <button class="top-navigation-component__user-wrapper">
+        <div class="top-navigation-component__user-avatar-wrapper">
+          <img src="/users/user-avatar.png" class="top-navigation-component__user-avatar" alt="user-avatrar" />
+        </div>
+        <div class="top-navigation-component__user-name">Julita Gomez</div>
+      </button>
+    </div>
+    <div class="hero-component">
+      <div class="hero-component__text-wrapper">
+        <h3 class="hero-component__playlist-info">Playlist</h3>
+        <h1 class="hero-component__playlist-name">Top songs <br>of the world</h1>
+        <h3 class="hero-component__playlist-description">Popular songs of Dua Lipa and many many others</h3>
+      </div>
+      <div class="hero-component__background-image-wrapper">
+        <img src="/images/playlist-background.jpg" class="hero-component__background-image" alt="playlist-background" />
+      </div>
+    </div>
+    <div class="main-container-component">
+      <div class="main-navigation-component">
+        <button class="main-navigation-component__play-button">
+          <img src="/assets/play.png" class="main-navigation-component__play-button-icon" alt="play-button-icon" />
+        </button>
+        <button class="main-navigation-component__favourite-button">
+          <img src="/assets/heart.png" class="main-navigation-component__favourite-button-icon"
+            alt="fabourite-button-icon" />
+        </button>
+        <button class="main-navigation-component__more-options-button">
+          <img src="/assets/more.png" class="main-navigation-component__more-options-icon"
+            alt="more-options-button-icon" />
+        </button>
+      </div>
+      <div class="tracklist-component"></div>
     </div>
   </div>
 
   <script type="module" src="/src/global-scripts/main.js"></script>
   <script type="module" src="/src/pages/home-page/scripts/home-page.js"></script>
+  <script type="module" src="/src/pages/home-page/scripts/tracklist-component.js"></script>
 </body>
 
 </html>

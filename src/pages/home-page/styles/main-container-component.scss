@@ -1,0 +1,9 @@
+@import '../../../global-styles/styles/breakpoints.scss';
+
+.main-container-component {
+    padding: 0 50px;
+
+    @media screen and (max-width: $tablet-breakpoint) {
+        padding: 0 16px;
+    }
+}
