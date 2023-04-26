@@ -92,4 +92,8 @@
             object-position: 50% 0%;
         }
     }
+
+    @media screen and (max-width: $mobile-breakpoint) {
+        height: 433px;
+    }
 }
