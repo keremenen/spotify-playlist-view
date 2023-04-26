@@ -80,11 +80,11 @@ trackList.forEach((track, index) => {
                 <div class="tracklist-component__single-track-main-info">${track.duration}</div>
             </div>
         <div class="tracklist-component__single-track-options">
-            <button class="tracklist-component__single-track-favourite-button">
+            <button class="tracklist-component__single-track-favourite-button tracklist-component__single-track-button">
                 <img src="/assets/heart.png" class="tracklist-component__single-track-favourite-icon"
                 alt="more-options-button-icon" />
             </button>
-            <button class="tracklist-component__single-track-more-options-button">
+            <button class="tracklist-component__single-track-more-options-button tracklist-component__single-track-button">
                 <img src="/assets/more.png" class="tracklist-component__single-track-more-options-icon"
                 alt="more-options-button-icon" />
             </button>

@@ -45,4 +45,8 @@
     @media screen and (max-width: $tablet-breakpoint) {
         display: block;
     }
+
+    @media screen and (max-width: $mobile-breakpoint) {
+        display: none;
+    }
 }

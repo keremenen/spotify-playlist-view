@@ -71,7 +71,6 @@
 
         & &__playlist-info {
             font-size: 16px;
-
             line-height: 19px;
         }
 
@@ -95,5 +94,9 @@
 
     @media screen and (max-width: $mobile-breakpoint) {
         height: 433px;
+
+        & &__background-image {
+            object-position: 79% 50%;
+        }
     }
 }
