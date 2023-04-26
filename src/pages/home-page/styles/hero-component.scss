@@ -99,4 +99,26 @@
             object-position: 79% 50%;
         }
     }
+
+    @media screen and (max-width: $ultra-mobile-breakpoint) {
+        height: 433px;
+
+        & &__background-image {
+            object-position: 79% 50%;
+        }
+
+        & &__playlist-info {
+            font-size: 14px;
+        }
+
+        & &__playlist-name {
+            font-size: 36px;
+
+        }
+
+        & &__playlist-description {
+            font-size: 14px;
+
+        }
+    }
 }

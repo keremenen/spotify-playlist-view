@@ -45,6 +45,7 @@
         width: 56px;
         border-radius: 8px;
         overflow: hidden;
+        flex-shrink: 0;
         cursor: pointer;
     }
 
@@ -131,13 +132,13 @@
         & &__single-track-details {
             margin: -4px 0 0 24px;
             gap: 24px;
-            flex-basis: 319px;
+            flex-basis: calc(42% + 10px);
         }
 
         & &__single-track-artist-wrapper {
             margin-top: -6px;
             margin-left: -2px;
-            flex-basis: 100px;
+            flex-basis: 30%;
         }
 
         & &__single-track-duration-wrapper,
@@ -160,6 +161,20 @@
 
         & &__single-track {
             padding: 6px 24px 0px 24px;
+        }
+
+        & &__single-track-details {
+            flex-basis: auto;
+        }
+    }
+
+    @media screen and (max-width: $mobile-breakpoint) {
+        & &__single-track {
+            padding: 0 15px 0 15px;
+        }
+
+        & &__single-track-options {
+            display: none;
         }
     }
 }
