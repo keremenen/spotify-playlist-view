@@ -1,0 +1,151 @@
+.tracklist-component {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom: 50px;
+}
+.tracklist-component .tracklist-component__single-track {
+  height: 89px;
+  padding: 1px 50px 0 51px;
+  border-radius: 17px;
+  background-color: var(--track-color);
+  display: flex;
+  align-items: center;
+  transition: background-color 0.15s ease-in-out;
+}
+.tracklist-component .tracklist-component__single-track--active {
+  background-color: var(--active-color);
+}
+.tracklist-component .tracklist-component__single-track:hover:not(.tracklist-component__single-track--active) {
+  background-color: var(--hover-color);
+}
+.tracklist-component .tracklist-component__single-track-order {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--text-color);
+}
+.tracklist-component .tracklist-component__single-track-details {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-left: 32px;
+  flex-basis: 461px;
+}
+.tracklist-component .tracklist-component__single-track-album-cover-wrapper {
+  height: 56px;
+  width: 56px;
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.tracklist-component .tracklist-component__single-track-album-image {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+.tracklist-component .tracklist-component__single-track-name-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.tracklist-component .tracklist-component__single-track-label {
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--text-color);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.tracklist-component .tracklist-component__single-track-main-info {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--white);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.tracklist-component .tracklist-component__single-track-artist-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex-basis: 414px;
+}
+.tracklist-component .tracklist-component__single-track-duration-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex-basis: 232px;
+}
+.tracklist-component .tracklist-component__single-track-options {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  margin-left: auto;
+}
+.tracklist-component .tracklist-component__single-track-button {
+  padding: 0;
+  cursor: pointer;
+}
+.tracklist-component .tracklist-component__single-track-favourite-button {
+  width: 24px;
+  height: 24px;
+}
+.tracklist-component .tracklist-component__single-track-more-options-button {
+  width: 36px;
+  height: 36px;
+}
+.tracklist-component .tracklist-component__single-track-favourite-icon, .tracklist-component .tracklist-component__single-track-more-options-icon {
+  width: 100%;
+}
+@media screen and (max-width: 834px) {
+  .tracklist-component {
+    margin-top: 24px;
+  }
+  .tracklist-component .tracklist-component__single-track {
+    padding: 0 24px 0 24px;
+  }
+  .tracklist-component .tracklist-component__single-track-order {
+    margin-top: -6px;
+  }
+  .tracklist-component .tracklist-component__single-track-details {
+    margin: -4px 0 0 24px;
+    gap: 24px;
+    flex-basis: calc(42% + 10px);
+  }
+  .tracklist-component .tracklist-component__single-track-artist-wrapper {
+    margin-top: -6px;
+    margin-left: -2px;
+    flex-basis: 30%;
+  }
+  .tracklist-component .tracklist-component__single-track-duration-wrapper, .tracklist-component .tracklist-component__single-track-favourite-button {
+    display: none;
+  }
+  .tracklist-component .tracklist-component__single-track-more-options-button {
+    margin-top: -6px;
+    margin-left: 1px;
+  }
+}
+@media screen and (max-width: 470px) {
+  .tracklist-component {
+    margin-top: -4px;
+  }
+  .tracklist-component .tracklist-component__single-track-artist-wrapper {
+    display: none;
+  }
+  .tracklist-component .tracklist-component__single-track {
+    padding: 6px 24px 0px 24px;
+  }
+  .tracklist-component .tracklist-component__single-track-details {
+    flex-basis: auto;
+  }
+}
+@media screen and (max-width: 470px) {
+  .tracklist-component .tracklist-component__single-track {
+    padding: 0 15px 0 15px;
+  }
+  .tracklist-component .tracklist-component__single-track-options {
+    display: none;
+  }
+}/*# sourceMappingURL=tracklist-component.css.map */

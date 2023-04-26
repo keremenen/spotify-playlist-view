@@ -1,0 +1,8 @@
+.main-container-component {
+  padding: 0 50px;
+}
+@media screen and (max-width: 834px) {
+  .main-container-component {
+    padding: 0 16px;
+  }
+}/*# sourceMappingURL=main-container-component.css.map */
