@@ -1,5 +1,9 @@
 #home-page {
+    background-color: var(--track-color);
 
-    background-color: var(--static-color);
-
+    & &__app {
+        background-color: var(--static-color);
+        margin: 0 auto;
+        max-width: 1440px;
+    }
 }

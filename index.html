@@ -12,79 +12,83 @@
 
 <body>
   <div id="home-page">
-    <div class="top-navigation-component">
-      <div class="top-navigation-component__navigation-buttons-wrapper">
-        <button class="top-navigation-component__navigation-button top-navigation-component__navigation-button--left">
-          <img src="/assets/left-arrow.png" class="top-navigation-component__button-arrow" alt="left-arrow">
-        </button>
-        <button class="top-navigation-component__navigation-button top-navigation-component__navigation-button--right">
-          <img src="/assets/right-arrow.png" class="top-navigation-component__button-arrow" alt="right-arrow">
+    <div id="home-page__app">
+      <div class="top-navigation-component">
+        <div class="top-navigation-component__navigation-buttons-wrapper">
+          <button class="top-navigation-component__navigation-button top-navigation-component__navigation-button--left">
+            <img src="/assets/left-arrow.png" class="top-navigation-component__button-arrow" alt="left-arrow">
+          </button>
+          <button
+            class="top-navigation-component__navigation-button top-navigation-component__navigation-button--right">
+            <img src="/assets/right-arrow.png" class="top-navigation-component__button-arrow" alt="right-arrow">
+          </button>
+        </div>
+        <button class="top-navigation-component__user-wrapper">
+          <div class="top-navigation-component__user-avatar-wrapper">
+            <img src="/users/user-avatar.png" class="top-navigation-component__user-avatar" alt="user-avatrar" />
+          </div>
+          <div class="top-navigation-component__user-name">Julita Gomez</div>
+          <div class="top-navigation-component__user-tooltip">Julita Gomez</div>
         </button>
       </div>
-      <button class="top-navigation-component__user-wrapper">
-        <div class="top-navigation-component__user-avatar-wrapper">
-          <img src="/users/user-avatar.png" class="top-navigation-component__user-avatar" alt="user-avatrar" />
+      <div class="hero-component">
+        <div class="hero-component__text-wrapper">
+          <h3 class="hero-component__playlist-info">Playlist</h3>
+          <h1 class="hero-component__playlist-name">Top songs <br>of the world</h1>
+          <h3 class="hero-component__playlist-description">Popular songs of Dua Lipa and many many others</h3>
         </div>
-        <div class="top-navigation-component__user-name">Julita Gomez</div>
-        <div class="top-navigation-component__user-tooltip">Julita Gomez</div>
-      </button>
-    </div>
-    <div class="hero-component">
-      <div class="hero-component__text-wrapper">
-        <h3 class="hero-component__playlist-info">Playlist</h3>
-        <h1 class="hero-component__playlist-name">Top songs <br>of the world</h1>
-        <h3 class="hero-component__playlist-description">Popular songs of Dua Lipa and many many others</h3>
+        <div class="hero-component__background-image-wrapper">
+          <img src="/images/playlist-background.jpg" class="hero-component__background-image"
+            alt="playlist-background" />
+        </div>
       </div>
-      <div class="hero-component__background-image-wrapper">
-        <img src="/images/playlist-background.jpg" class="hero-component__background-image" alt="playlist-background" />
+      <div class="main-container-component">
+        <div class="main-navigation-component">
+          <button class="main-navigation-component__play-button">
+            <img src="/assets/play.png" class="main-navigation-component__play-button-icon" alt="play-button-icon" />
+          </button>
+          <button class="main-navigation-component__favourite-button">
+            <img src="/assets/heart.png" class="main-navigation-component__favourite-button-icon"
+              alt="fabourite-button-icon" />
+          </button>
+          <button class="main-navigation-component__more-options-button">
+            <img src="/assets/more.png" class="main-navigation-component__more-options-icon"
+              alt="more-options-button-icon" />
+          </button>
+        </div>
+        <div class="tracklist-component"></div>
       </div>
-    </div>
-    <div class="main-container-component">
-      <div class="main-navigation-component">
-        <button class="main-navigation-component__play-button">
-          <img src="/assets/play.png" class="main-navigation-component__play-button-icon" alt="play-button-icon" />
-        </button>
-        <button class="main-navigation-component__favourite-button">
-          <img src="/assets/heart.png" class="main-navigation-component__favourite-button-icon"
-            alt="fabourite-button-icon" />
-        </button>
-        <button class="main-navigation-component__more-options-button">
-          <img src="/assets/more.png" class="main-navigation-component__more-options-icon"
-            alt="more-options-button-icon" />
-        </button>
-      </div>
-      <div class="tracklist-component"></div>
-    </div>
-    <div class="bottom-navigation-component">
-      <div class="bottom-navigation-component__menu-wrapper">
-        <div class="bottom-navigation-component__menu-single-item">
-          <div class="bottom-navigation-component__menu-single-item-icon-wrapper">
-            <img src="/assets/home-button.png" class="bottom-navigation-component__menu-single-item-icon"
-              alt="home-button" />
+      <div class="bottom-navigation-component">
+        <div class="bottom-navigation-component__menu-wrapper">
+          <div class="bottom-navigation-component__menu-single-item">
+            <div class="bottom-navigation-component__menu-single-item-icon-wrapper">
+              <img src="/assets/home-button.png" class="bottom-navigation-component__menu-single-item-icon"
+                alt="home-button" />
+            </div>
+            <div class="bottom-navigation-component__menu-single-item-name">Home</div>
           </div>
-          <div class="bottom-navigation-component__menu-single-item-name">Home</div>
-        </div>
-        <div class="bottom-navigation-component__menu-single-item">
-          <div class="bottom-navigation-component__menu-single-item-icon-wrapper">
-            <img src="/assets/search-button.png" class="bottom-navigation-component__menu-single-item-icon"
-              alt="search-button" />
+          <div class="bottom-navigation-component__menu-single-item">
+            <div class="bottom-navigation-component__menu-single-item-icon-wrapper">
+              <img src="/assets/search-button.png" class="bottom-navigation-component__menu-single-item-icon"
+                alt="search-button" />
+            </div>
+            <div class="bottom-navigation-component__menu-single-item-name">Search</div>
           </div>
-          <div class="bottom-navigation-component__menu-single-item-name">Search</div>
-        </div>
-        <div class="bottom-navigation-component__menu-single-item">
-          <div class="bottom-navigation-component__menu-single-item-icon-wrapper">
-            <img src="/assets/library-button.png"
-              class="bottom-navigation-component__menu-single-item-icon bottom-navigation-component__library-button"
-              alt="library-button" />
+          <div class="bottom-navigation-component__menu-single-item">
+            <div class="bottom-navigation-component__menu-single-item-icon-wrapper">
+              <img src="/assets/library-button.png"
+                class="bottom-navigation-component__menu-single-item-icon bottom-navigation-component__library-button"
+                alt="library-button" />
+            </div>
+            <div class="bottom-navigation-component__menu-single-item-name">Library</div>
           </div>
-          <div class="bottom-navigation-component__menu-single-item-name">Library</div>
-        </div>
-        <div class="bottom-navigation-component__menu-single-item">
-          <div class="bottom-navigation-component__menu-single-item-icon-wrapper">
-            <img src="/assets/liked-button.png" class="bottom-navigation-component__menu-single-item-icon"
-              alt="liked-songs-button" />
+          <div class="bottom-navigation-component__menu-single-item">
+            <div class="bottom-navigation-component__menu-single-item-icon-wrapper">
+              <img src="/assets/liked-button.png" class="bottom-navigation-component__menu-single-item-icon"
+                alt="liked-songs-button" />
+            </div>
+            <div class="bottom-navigation-component__menu-single-item-name">Liked songs</div>
           </div>
-          <div class="bottom-navigation-component__menu-single-item-name">Liked songs</div>
         </div>
       </div>
     </div>
