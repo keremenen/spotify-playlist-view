@@ -22,7 +22,7 @@ const trackList = [
     //     coverImage: '/tracks/gemini-rights.png'
     // },
     // {
-    //     artist: 'Mark Menday, Seb Mount',
+    //     artist: 'Mark Menday, Seb Mont',
     //     track: 'Talk To Me',
     //     album: 'Talk To Me',
     //     duration: '2:28',
