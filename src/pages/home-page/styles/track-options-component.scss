@@ -1,14 +1,19 @@
 @import '../../../global-styles/styles/breakpoints.scss';
 
 .track-options-component {
+    display: none;
     position: absolute;
     max-width: 248px;
-    bottom: 0;
-    left: -500px;
+    bottom: -382px;
+    left: -160px;
     padding: 16px;
     background-color: var(--hover-color);
     z-index: 1;
     border-radius: 8px;
+
+    &__active {
+        display: block !important;
+    }
 
     & &__wrapper {
         display: flex;
@@ -24,6 +29,7 @@
 
     & &__single-option {
         color: var(--white);
+        position: relative;
         height: 50px;
         list-style: none;
         display: flex;
@@ -43,6 +49,14 @@
 
     & &__single-option:hover {
         background-color: var(--active-color);
+    }
+
+    & &__single-option--expand::after {
+        content: url('/assets/expand.png');
+        transform: scale(.5);
+        right: 10px;
+        top: 12px;
+        position: absolute;
     }
 
     & &__separator {

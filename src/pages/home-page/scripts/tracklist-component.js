@@ -7,55 +7,55 @@ const trackList = [
         duration: '3:20',
         coverImage: '/tracks/flowers.png'
     },
-    // {
-    //     artist: 'Sza',
-    //     track: 'Kill Bill',
-    //     album: 'Sos',
-    //     duration: '2:32',
-    //     coverImage: '/tracks/sos.png'
-    // },
-    // {
-    //     artist: 'Steve Lacy',
-    //     track: 'Bad Habit',
-    //     album: 'Gemini Rights',
-    //     duration: '3:52',
-    //     coverImage: '/tracks/gemini-rights.png'
-    // },
-    // {
-    //     artist: 'Mark Menday, Seb Mont',
-    //     track: 'Talk To Me',
-    //     album: 'Talk To Me',
-    //     duration: '2:28',
-    //     coverImage: '/tracks/talk-to-me.png'
-    // },
-    // {
-    //     artist: 'Olivia Rodrigo',
-    //     track: 'Good 4 u',
-    //     album: 'Sour',
-    //     duration: '2:58',
-    //     coverImage: '/tracks/sour.png'
-    // },
-    // {
-    //     artist: 'Lil Nas X',
-    //     track: 'INDUSTRY BABY',
-    //     album: 'Singiel',
-    //     duration: '3:32',
-    //     coverImage: '/tracks/singiel.png'
-    // },
-    // {
-    //     artist: 'Harry Styles',
-    //     track: 'Watermelon Sugar',
-    //     album: 'Fine Line',
-    //     duration: '2:54',
-    //     coverImage: '/tracks/fine-line.png'
-    // },
-    // {
-    //     artist: 'Isal Daniels',
-    //     track: 'Always',
-    //     album: 'Fine Line',
-    //     duration: '3:33',
-    //     coverImage: '/tracks/yours.png'
-    // },
+    {
+        artist: 'Sza',
+        track: 'Kill Bill',
+        album: 'Sos',
+        duration: '2:32',
+        coverImage: '/tracks/sos.png'
+    },
+    {
+        artist: 'Steve Lacy',
+        track: 'Bad Habit',
+        album: 'Gemini Rights',
+        duration: '3:52',
+        coverImage: '/tracks/gemini-rights.png'
+    },
+    {
+        artist: 'Mark Menday, Seb Mont',
+        track: 'Talk To Me',
+        album: 'Talk To Me',
+        duration: '2:28',
+        coverImage: '/tracks/talk-to-me.png'
+    },
+    {
+        artist: 'Olivia Rodrigo',
+        track: 'Good 4 u',
+        album: 'Sour',
+        duration: '2:58',
+        coverImage: '/tracks/sour.png'
+    },
+    {
+        artist: 'Lil Nas X',
+        track: 'INDUSTRY BABY',
+        album: 'Singiel',
+        duration: '3:32',
+        coverImage: '/tracks/singiel.png'
+    },
+    {
+        artist: 'Harry Styles',
+        track: 'Watermelon Sugar',
+        album: 'Fine Line',
+        duration: '2:54',
+        coverImage: '/tracks/fine-line.png'
+    },
+    {
+        artist: 'Isal Daniels',
+        track: 'Always',
+        album: 'Fine Line',
+        duration: '3:33',
+        coverImage: '/tracks/yours.png'
+    },
 ]
 
 trackList.forEach((track, index) => {
@@ -102,10 +102,10 @@ trackList.forEach((track, index) => {
                     <div class="track-options-component__separator"></div>  
                     <div class="track-options-component__options-group-wrapper">
                         <li class="track-options-component__single-option">Add to playlist</li>
-                        <li class="track-options-component__single-option">Show content authors</li>
+                        <li class="track-options-component__single-option track-options-component__single-option--expand">Show content authors</li>
                     </div>
                     <div class="track-options-component__separator"></div> 
-                    <li class="track-options-component__single-option">Share</li>
+                    <li class="track-options-component__single-option track-options-component__single-option--expand">Share</li>
                 </div>
             </div>
         </div>
@@ -126,5 +126,22 @@ allSongs.forEach(song => song.addEventListener(
             })
 
     song.classList.toggle('tracklist-component__single-track--active')
+    }
+))
+
+const optionButtons = document.querySelectorAll('.tracklist-component__single-track-more-options-button')
+console.log(optionList)
+
+const optionList = document.querySelectorAll('.track-options-component')
+optionButtons.forEach(button => button.addEventListener(
+    'click',
+    () => {
+        optionList.forEach(option =>{
+            if (option.style.display == "none") option.style.display = "block"
+            else{
+
+                option.style.display = 'none'
+            }
+        })
     }
 ))
