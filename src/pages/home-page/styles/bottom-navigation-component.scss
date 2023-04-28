@@ -47,6 +47,11 @@
         white-space: nowrap;
     }
 
+    & &__menu-single-item-name--active {
+        font-weight: 700;
+        color: var(--white);
+    }
+
     & &__menu-single-item:hover &__menu-single-item-name {
         color: var(--white);
     }
