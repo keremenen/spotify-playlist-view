@@ -26,6 +26,7 @@
     }
 
     & &__single-track-order {
+        margin-bottom: 2px;
         font-weight: 400;
         font-size: 18px;
         line-height: 22px;
@@ -119,24 +120,24 @@
     }
 
     @media screen and (max-width: $tablet-breakpoint) {
-        margin-top: 24px;
+        margin-top: -2px;
 
         & &__single-track {
             padding: 0 24px 0 24px;
         }
 
         & &__single-track-order {
-            margin-top: -6px;
+            margin-top: -3px;
         }
 
         & &__single-track-details {
-            margin: -4px 0 0 24px;
+            margin: -1px 0 0 24px;
             gap: 24px;
-            flex-basis: calc(42% + 10px);
+            flex-basis: calc(41% + 10px);
         }
 
         & &__single-track-artist-wrapper {
-            margin-top: -6px;
+            margin-top: -1px;
             margin-left: -2px;
             flex-basis: 30%;
         }
