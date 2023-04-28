@@ -126,22 +126,35 @@ allSongs.forEach(song => song.addEventListener(
             })
 
     song.classList.toggle('tracklist-component__single-track--active')
+    // console.log(song.childNodes.children)
     }
 ))
 
-const optionButtons = document.querySelectorAll('.tracklist-component__single-track-more-options-button')
-console.log(optionList)
 
-const optionList = document.querySelectorAll('.track-options-component')
-optionButtons.forEach(button => button.addEventListener(
-    'click',
-    () => {
-        optionList.forEach(option =>{
-            if (option.style.display == "none") option.style.display = "block"
-            else{
+    const optionList = document.querySelectorAll('.tracklist-component__single-track-more-options-button')
 
-                option.style.display = 'none'
-            }
-        })
-    }
-))
+    
+    optionList.forEach(option =>  option.addEventListener(
+        'click',
+        (e) => {
+          const trackOptionsList = document.querySelectorAll('.track-options-component')
+          trackOptionsList.forEach(trackOption => {
+            trackOption.style.display = "none"
+          })
+      
+          const menuWrapper = option.nextElementSibling
+          menuWrapper.classList.toggle('track-options-component__active')
+          e.stopPropagation()
+        }
+      ))
+
+    const element = document.querySelector('#home-page')
+
+    element.addEventListener(
+        'click',
+        () => {
+            const trackOptionsList = document.querySelectorAll('.track-options-component')
+            trackOptionsList.forEach(trackOption => {
+            trackOption.classList.remove('track-options-component__active')
+        })}
+    )
