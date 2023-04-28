@@ -72,23 +72,25 @@
         & &__playlist-info {
             font-size: 16px;
             line-height: 19px;
+            letter-spacing: -0.04em;
+            margin-bottom: 1px;
         }
 
         & &__playlist-name {
             font-size: 48px;
             max-width: 290px;
-            padding: 0;
-            letter-spacing: -1.74px;
+            letter-spacing: -0.04em;
+            margin-bottom: -1px;
         }
 
         & &__playlist-description {
             font-size: 16px;
             line-height: 19px;
-            letter-spacing: -0.51px;
+            letter-spacing: -0.04em;
         }
 
         & &__background-image {
-            object-position: 50% 0%;
+            object-position: 50% 10%;
         }
     }
 
@@ -104,7 +106,7 @@
         height: 433px;
 
         & &__background-image {
-            object-position: 79% 50%;
+            object-position: 50% 30%;
         }
 
         & &__playlist-info {
