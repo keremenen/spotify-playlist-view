@@ -115,25 +115,21 @@ trackList.forEach((track, index) => {
 })
 
 const allSongs = document.querySelectorAll('.tracklist-component__single-track')
+const optionList = document.querySelectorAll('.tracklist-component__single-track-more-options-button')
 
-allSongs.forEach(song => song.addEventListener(
-    'click',
-    () => {
-        allSongs.forEach(otherSong => {
-            if (otherSong !== song && otherSong.classList.contains('tracklist-component__single-track--active')) {
-              otherSong.classList.remove('tracklist-component__single-track--active')
-                }
-            })
+    allSongs.forEach(song => song.addEventListener(
+        'click',
+        () => {
+            allSongs.forEach(otherSong => {
+                if (otherSong !== song && otherSong.classList.contains('tracklist-component__single-track--active')) {
+                otherSong.classList.remove('tracklist-component__single-track--active')
+                    }
+                })
 
-    song.classList.toggle('tracklist-component__single-track--active')
-    // console.log(song.childNodes.children)
-    }
-))
+        song.classList.toggle('tracklist-component__single-track--active')
+        }
+    ))
 
-
-    const optionList = document.querySelectorAll('.tracklist-component__single-track-more-options-button')
-
-    
     optionList.forEach(option =>  option.addEventListener(
         'click',
         (e) => {
