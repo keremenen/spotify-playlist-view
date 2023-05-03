@@ -68,7 +68,7 @@ trackList.forEach((track, index) => {
             </div>
             <div class="tracklist-component__single-track-name-wrapper">
                 <div class="tracklist-component__single-track-label">${track.album}</div>
-                <div class="tracklist-component__single-track-main-info">${track.track}</div>
+                <div class="tracklist-component__single-track-main-info ">${track.track}</div>
             </div>
         </div>
         <div class="tracklist-component__single-track-artist-wrapper">

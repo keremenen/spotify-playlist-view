@@ -101,6 +101,8 @@
     }
 
     @media screen and (max-width: $tablet-breakpoint) {
+        padding: 20px 30px 20px 25px;
+
         & &__menu-wrapper {
             flex-direction: column;
             text-align: center;

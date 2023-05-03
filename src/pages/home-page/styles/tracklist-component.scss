@@ -76,7 +76,11 @@
         font-size: 16px;
         line-height: 19px;
         color: var(--white);
-        width: fit-content;
+        text-overflow: ellipsis;
+        /* enables ellipsis */
+        white-space: nowrap;
+        /* keeps the text in a single line */
+        overflow: hidden;
     }
 
     & &__single-track-artist-wrapper {
@@ -137,6 +141,10 @@
             margin: -1px 0 0 24px;
             gap: 24px;
             flex-basis: calc(41% + 11px);
+        }
+
+        & &__single-track-name-wrapper {
+            max-width: 122px;
         }
 
         & &__single-track-artist-wrapper {
