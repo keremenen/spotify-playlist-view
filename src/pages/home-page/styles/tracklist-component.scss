@@ -179,4 +179,18 @@
             flex-basis: auto;
         }
     }
+
+    @media screen and (max-width: $ultra-mobile-breakpoint) {
+        & &__single-track {
+            padding: 0px 10px 0 20px;
+        }
+
+        & &__single-track-name-wrapper {
+            max-width: 78px;
+        }
+
+        & &__single-track-options {
+            display: none;
+        }
+    }
 }

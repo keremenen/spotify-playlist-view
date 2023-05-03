@@ -105,10 +105,6 @@
     @media screen and (max-width: $ultra-mobile-breakpoint) {
         height: 433px;
 
-        & &__background-image {
-            object-position: 50% 30%;
-        }
-
         & &__playlist-info {
             font-size: 14px;
         }
