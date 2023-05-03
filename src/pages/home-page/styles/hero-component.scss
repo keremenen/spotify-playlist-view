@@ -3,7 +3,7 @@
 .hero-component {
     position: relative;
     top: 0;
-    height: 434px;
+    height: 433px;
     margin-top: -84px;
     z-index: 1;
     overflow: hidden;
@@ -12,7 +12,7 @@
         position: absolute;
         bottom: 50px;
         left: 50px;
-        max-width: 350px;
+        max-width: 400px;
         gap: 24px;
         display: flex;
         flex-direction: column;
@@ -24,7 +24,7 @@
         line-height: 22px;
         display: flex;
         align-items: center;
-        letter-spacing: -0.04em;
+        letter-spacing: -0.9px;
         color: var(--white);
         margin: 0;
     }
@@ -72,23 +72,25 @@
         & &__playlist-info {
             font-size: 16px;
             line-height: 19px;
+            letter-spacing: -0.04em;
+            margin-bottom: 1px;
         }
 
         & &__playlist-name {
             font-size: 48px;
             max-width: 290px;
-            padding: 0;
-            letter-spacing: -1.74px;
+            letter-spacing: -0.04em;
+            margin-bottom: -1px;
         }
 
         & &__playlist-description {
             font-size: 16px;
             line-height: 19px;
-            letter-spacing: -0.51px;
+            letter-spacing: -0.04em;
         }
 
         & &__background-image {
-            object-position: 50% 0%;
+            object-position: 50% 10%;
         }
     }
 
@@ -102,10 +104,6 @@
 
     @media screen and (max-width: $ultra-mobile-breakpoint) {
         height: 433px;
-
-        & &__background-image {
-            object-position: 79% 50%;
-        }
 
         & &__playlist-info {
             font-size: 14px;

@@ -22,7 +22,7 @@ const trackList = [
         coverImage: '/tracks/gemini-rights.png'
     },
     {
-        artist: 'Mark Menday, Seb Mount',
+        artist: 'Mark Menday, Seb Mont',
         track: 'Talk To Me',
         album: 'Talk To Me',
         duration: '2:28',
@@ -68,7 +68,7 @@ trackList.forEach((track, index) => {
             </div>
             <div class="tracklist-component__single-track-name-wrapper">
                 <div class="tracklist-component__single-track-label">${track.album}</div>
-                <div class="tracklist-component__single-track-main-info">${track.track}</div>
+                <div class="tracklist-component__single-track-main-info ">${track.track}</div>
             </div>
         </div>
         <div class="tracklist-component__single-track-artist-wrapper">
@@ -88,6 +88,26 @@ trackList.forEach((track, index) => {
                 <img src="/assets/more.png" class="tracklist-component__single-track-more-options-icon"
                 alt="more-options-button-icon" />
             </button>
+
+            <div class="track-options-component">
+                <div class="track-options-component__wrapper">
+                    <li class="track-options-component__single-option">Add to queue</li>
+                    <div class="track-options-component__separator"></div> 
+                    <div class="track-options-component__options-group-wrapper">              
+                        <li class="track-options-component__single-option">Go to the track</li>
+                        <li class="track-options-component__single-option">Go to the artist</li>
+                        <li class="track-options-component__single-option">Go to album</li>
+                        <li class="track-options-component__single-option">Show content authors</li>
+                    </div>
+                    <div class="track-options-component__separator"></div>  
+                    <div class="track-options-component__options-group-wrapper">
+                        <li class="track-options-component__single-option">Add to playlist</li>
+                        <li class="track-options-component__single-option track-options-component__single-option--expand">Show content authors</li>
+                    </div>
+                    <div class="track-options-component__separator"></div> 
+                    <li class="track-options-component__single-option track-options-component__single-option--expand">Share</li>
+                </div>
+            </div>
         </div>
     </div>
   `
@@ -95,16 +115,42 @@ trackList.forEach((track, index) => {
 })
 
 const allSongs = document.querySelectorAll('.tracklist-component__single-track')
+const optionList = document.querySelectorAll('.tracklist-component__single-track-more-options-button')
 
-allSongs.forEach(song => song.addEventListener(
-    'click',
-    () => {
-        allSongs.forEach(otherSong => {
-            if (otherSong !== song && otherSong.classList.contains('tracklist-component__single-track--active')) {
-              otherSong.classList.remove('tracklist-component__single-track--active')
-                }
-            })
+    allSongs.forEach(song => song.addEventListener(
+        'click',
+        () => {
+            allSongs.forEach(otherSong => {
+                if (otherSong !== song && otherSong.classList.contains('tracklist-component__single-track--active')) {
+                otherSong.classList.remove('tracklist-component__single-track--active')
+                    }
+                })
 
-    song.classList.toggle('tracklist-component__single-track--active')
-    }
-))
+        song.classList.toggle('tracklist-component__single-track--active')
+        }
+    ))
+
+    optionList.forEach(option =>  option.addEventListener(
+        'click',
+        (e) => {
+          const trackOptionsList = document.querySelectorAll('.track-options-component')
+          trackOptionsList.forEach(trackOption => {
+            trackOption.style.display = "none"
+          })
+      
+          const menuWrapper = option.nextElementSibling
+          menuWrapper.classList.toggle('track-options-component__active')
+          e.stopPropagation()
+
+          const element = document.querySelector('#home-page')
+      
+          element.addEventListener(
+              'click',
+              () => {
+                  const trackOptionsList = document.querySelectorAll('.track-options-component')
+                  trackOptionsList.forEach(trackOption => {
+                  trackOption.classList.remove('track-options-component__active')
+              })}
+          )
+        }
+      ))

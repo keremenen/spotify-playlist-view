@@ -1,0 +1,74 @@
+@import '../../../global-styles/styles/breakpoints.scss';
+
+.track-options-component {
+    display: none;
+    position: absolute;
+    max-width: 248px;
+    bottom: -382px;
+    left: -160px;
+    padding: 16px;
+    background-color: var(--hover-color);
+    z-index: 1;
+    border-radius: 8px;
+
+    &__active {
+        display: block !important;
+    }
+
+    & &__wrapper {
+        display: flex;
+        flex-direction: column;
+        margin: 16px 0;
+    }
+
+    & &__options-group-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    & &__single-option {
+        color: var(--white);
+        position: relative;
+        height: 50px;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        border-radius: 8px;
+        cursor: pointer;
+        padding-left: 16px;
+        width: 216px;
+        margin: 0;
+        font-weight: 500;
+        font-size: 14px;
+        // line-height: 1.19em;
+        line-height: 20px;
+        // margin: -1.178em 0 -1.178em 0;
+        margin: -16.3px 0 -16.3px 0;
+    }
+
+    & &__single-option:hover {
+        background-color: var(--active-color);
+    }
+
+    & &__single-option--expand::after {
+        content: url('/assets/expand.png');
+        transform: scale(.5);
+        right: 10px;
+        top: 12px;
+        position: absolute;
+    }
+
+    & &__separator {
+        margin: 0;
+        padding: 0;
+        height: 1px;
+        width: 184px;
+        margin: 15px auto;
+        background-color: var(--active-color);
+    }
+
+    @media screen and (max-width: $tablet-breakpoint) {
+        left: -210px;
+    }
+}
