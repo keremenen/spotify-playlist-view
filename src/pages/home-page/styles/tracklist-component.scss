@@ -167,26 +167,16 @@
     @media screen and (max-width: $mobile-breakpoint) {
         margin-top: -4px;
 
+        & &__single-track {
+            padding: 3px 24px 0 24px;
+        }
+
         & &__single-track-artist-wrapper {
             display: none;
         }
 
-        & &__single-track {
-            padding: 6px 24px 0px 24px;
-        }
-
         & &__single-track-details {
             flex-basis: auto;
-        }
-    }
-
-    @media screen and (max-width: $mobile-breakpoint) {
-        & &__single-track {
-            padding: 0 15px 0 15px;
-        }
-
-        & &__single-track-options {
-            display: none;
         }
     }
 }

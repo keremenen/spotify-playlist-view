@@ -67,4 +67,8 @@
         margin: 15px auto;
         background-color: var(--active-color);
     }
+
+    @media screen and (max-width: $tablet-breakpoint) {
+        left: -210px;
+    }
 }
