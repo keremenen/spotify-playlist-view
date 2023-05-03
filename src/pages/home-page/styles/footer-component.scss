@@ -38,6 +38,13 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 19px;
+        cursor: pointer;
+    }
+
+    & &__single-menu-list-item:hover {
+        text-decoration: underline;
+        text-underline-offset: 2px;
+        color: var(--white);
     }
 
     & &__social-wrapper {
@@ -53,6 +60,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
+        transition: background-color 150ms ease-in-out;
+    }
+
+    & &__social-single-icon-wrapper:hover {
+        background-color: var(--white30);
     }
 
     & &__social-single-icon {
