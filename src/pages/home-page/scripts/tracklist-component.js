@@ -141,16 +141,16 @@ const optionList = document.querySelectorAll('.tracklist-component__single-track
           const menuWrapper = option.nextElementSibling
           menuWrapper.classList.toggle('track-options-component__active')
           e.stopPropagation()
+
+          const element = document.querySelector('#home-page')
+      
+          element.addEventListener(
+              'click',
+              () => {
+                  const trackOptionsList = document.querySelectorAll('.track-options-component')
+                  trackOptionsList.forEach(trackOption => {
+                  trackOption.classList.remove('track-options-component__active')
+              })}
+          )
         }
       ))
-
-    const element = document.querySelector('#home-page')
-
-    element.addEventListener(
-        'click',
-        () => {
-            const trackOptionsList = document.querySelectorAll('.track-options-component')
-            trackOptionsList.forEach(trackOption => {
-            trackOption.classList.remove('track-options-component__active')
-        })}
-    )
